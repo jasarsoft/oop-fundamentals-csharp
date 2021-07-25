@@ -9,7 +9,7 @@
             // temporary hard-coded values
             if (customerId == 1)
             {
-                customer.EmailAddress = "fbaggins@hobbition.me";
+                customer.EmailAddress = "fbaggins@hobbiton.me";
                 customer.FirstName = "Frodo";
                 customer.LastName = "Baggins";
             }
@@ -19,7 +19,7 @@
 
         public bool Save(Customer customer)
         {
-            return true;
+            return true;    
         }
     }
 }

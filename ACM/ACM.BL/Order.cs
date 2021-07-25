@@ -18,16 +18,6 @@ namespace ACM.BL
 
         public int OrderId { get; set; }
 
-        public Order Retrieve(int orderId)
-        {
-            return new Order();
-        }
-
-        public bool Save()
-        {
-            return true;
-        }
-
         public bool Validate()
         {
             var isValid = true;
