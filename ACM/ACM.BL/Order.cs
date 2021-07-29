@@ -26,6 +26,8 @@ namespace ACM.BL
 
         public List<OrderItem> OrderItems { get; set; }
 
+        public override string ToString() => $"{OrderDate.Value.Date} ({OrderId})";
+
         public bool Validate()
         {
             var isValid = true;
