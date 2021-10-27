@@ -12,10 +12,9 @@ namespace Acme.CommonTest
             // Arrange
             var soruce = "SonicScrewdriver";
             var expected = "Sonic Screwdriver";
-            var handler = new StringHandler();
 
             // Act
-            var actual = handler.InsertSpaces((soruce));
+            var actual = StringHandler.InsertSpaces((soruce));
 
             // Assert
             Assert.AreEqual(expected, actual);
@@ -27,10 +26,9 @@ namespace Acme.CommonTest
             // Arrange
             var soruce = "SonicScrewdriver";
             var expected = "Sonic Screwdriver";
-            var handler = new StringHandler();
 
             // Act
-            var actual = handler.InsertSpaces((soruce));
+            var actual = StringHandler.InsertSpaces((soruce));
 
             // Assert
             Assert.AreEqual(expected, actual);
