@@ -13,6 +13,7 @@ namespace Acme.Common
                 {
                     if (char.IsUpper((letter)))
                     {
+                        result = result.Trim();
                         result += " ";
                     }
 
@@ -20,7 +21,7 @@ namespace Acme.Common
                 }
             }
 
-            return result;
+            return result.Trim();
         }
     }
 }
