@@ -1,9 +1,9 @@
-﻿using System;
-using Acme.Common;
+﻿using Acme.Common;
+using System;
 
 namespace ACM.BL
 {
-    public class Product: EntityBase
+    public class Product: EntityBase, ILoggable
     {
         public Product()
         {
@@ -32,7 +32,7 @@ namespace ACM.BL
             set { _productName = value; }
         }
 
-        public string Log() => $"{ProductId}: {ProductName} Detail: {ProductDescription} Status: {CurrentPrice.ToString()}";
+        public string Log() => $"{ProductId}: {ProductName} Detail: {ProductDescription} Status: {EntityState.ToString()}";
 
         public override string ToString() => ProductName;
   

@@ -4,10 +4,11 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Acme.Common;
 
 namespace ACM.BL
 {
-    public class Customer
+    public class Customer: EntityBase, ILoggable
     {
         public Customer(): this(0)
         {
@@ -61,11 +62,11 @@ namespace ACM.BL
             }
         }
 
-        public string Log() => $"{CustomerId}: {FullName} Email: {EmailAddress} Status: {InstanceCount.ToString()}";
+        public string Log() => $"{CustomerId}: {FullName} Email: {EmailAddress} Status: {EntityState.ToString()}";
 
         public override string ToString() => FullName;
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
