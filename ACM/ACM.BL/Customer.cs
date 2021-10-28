@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,6 +60,8 @@ namespace ACM.BL
                 _lastName = value;
             }
         }
+
+        public string Log() => $"{CustomerId}: {FullName} Email: {EmailAddress} Status: {InstanceCount.ToString()}";
 
         public override string ToString() => FullName;
 

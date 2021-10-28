@@ -32,6 +32,8 @@ namespace ACM.BL
             set { _productName = value; }
         }
 
+        public string Log() => $"{ProductId}: {ProductName} Detail: {ProductDescription} Status: {CurrentPrice.ToString()}";
+
         public override string ToString() => ProductName;
   
 
